@@ -21,8 +21,8 @@ username_input = webdriver.find_element(By.CSS_SELECTOR, '#loginForm > div > div
 password_input = webdriver.find_element(By.CSS_SELECTOR, '#loginForm > div > div:nth-child(2) > div > label > input')
 login_button = webdriver.find_element(By.CSS_SELECTOR, '#loginForm > div > div:nth-child(3)')
 
-username_input.send_keys("elder_ribeiro_s")  # Substitua pelo seu nome de usuário do Instagram
-password_input.send_keys("elderloucao")  # Substitua pela sua senha do Instagram
+username_input.send_keys("username")  # Substitua pelo seu nome de usuário do Instagram
+password_input.send_keys("password")  # Substitua pela sua senha do Instagram
 login_button.click()
 sleep(3)
 
@@ -41,7 +41,7 @@ except:
     pass
 
 # Navegar para a URL da postagem específica onde você deseja deixar comentários
-url_postagem = 'https://www.instagram.com/p/Cu5TnJ7P2jY/'  # Substitua pela URL da postagem desejada
+url_postagem = 'https://www.instagram.com'  # Substitua pela URL da postagem desejada #https://www.instagram.com/p/Cu5TnJ7P2jY/
 webdriver.get(url_postagem)
 
 comentarios = 0
